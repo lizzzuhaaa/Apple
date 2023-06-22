@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C917CDAC2A2CDE9D00CFD566 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C917CDAB2A2CDE9D00CFD566 /* GoogleService-Info.plist */; };
+		C917CDAF2A2CE1D100CFD566 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C917CDAE2A2CE1D100CFD566 /* FirebaseAnalytics */; };
+		C917CDB12A2CE1D100CFD566 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = C917CDB02A2CE1D100CFD566 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		C917CDB32A2CE1D100CFD566 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C917CDB22A2CE1D100CFD566 /* FirebaseCrashlytics */; };
+		C917CDB52A2CE1D100CFD566 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = C917CDB42A2CE1D100CFD566 /* FirebasePerformance */; };
+		C9549C472A41D23E004FAAEB /* SnapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9549C462A41D23E004FAAEB /* SnapUITests.swift */; };
+		C9549C592A41F608004FAAEB /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9549C582A41F608004FAAEB /* SnapshotHelper.swift */; };
+		C9DC0BB22A24BECE0032CAC8 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DC0BB12A24BECE0032CAC8 /* Networking.framework */; };
+		C9DC0BB32A24BECE0032CAC8 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9DC0BB12A24BECE0032CAC8 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9DC0BC12A24D7A60032CAC8 /* CatCellDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC0BC02A24D7A60032CAC8 /* CatCellDetails.swift */; };
+		C9FD665D2A2148D4003BE475 /* CatAppSydorovaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD665C2A2148D4003BE475 /* CatAppSydorovaApp.swift */; };
+		C9FD665F2A2148D4003BE475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD665E2A2148D4003BE475 /* ContentView.swift */; };
+		C9FD66612A2148D5003BE475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FD66602A2148D5003BE475 /* Assets.xcassets */; };
+		C9FD66642A2148D5003BE475 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9FD66632A2148D5003BE475 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9549C4A2A41D23E004FAAEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9FD66512A2148D4003BE475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9FD66582A2148D4003BE475;
+			remoteInfo = CatAppSydorova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9DC0BB42A24BECE0032CAC8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9DC0BB32A24BECE0032CAC8 /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C917CDAB2A2CDE9D00CFD566 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9549C442A41D23D004FAAEB /* SnapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9549C462A41D23E004FAAEB /* SnapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapUITests.swift; sourceTree = "<group>"; };
+		C9549C582A41F608004FAAEB /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		C9B6DD782A374A640042D07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C9DC0BB12A24BECE0032CAC8 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DC0BC02A24D7A60032CAC8 /* CatCellDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatCellDetails.swift; sourceTree = "<group>"; };
+		C9FD66592A2148D4003BE475 /* CatAppSydorova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatAppSydorova.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FD665C2A2148D4003BE475 /* CatAppSydorovaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAppSydorovaApp.swift; sourceTree = "<group>"; };
+		C9FD665E2A2148D4003BE475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9FD66602A2148D5003BE475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9FD66632A2148D5003BE475 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9549C412A41D23D004FAAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FD66562A2148D4003BE475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C917CDAF2A2CE1D100CFD566 /* FirebaseAnalytics in Frameworks */,
+				C917CDB32A2CE1D100CFD566 /* FirebaseCrashlytics in Frameworks */,
+				C917CDB52A2CE1D100CFD566 /* FirebasePerformance in Frameworks */,
+				C917CDB12A2CE1D100CFD566 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				C9DC0BB22A24BECE0032CAC8 /* Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9549C452A41D23E004FAAEB /* SnapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C9549C582A41F608004FAAEB /* SnapshotHelper.swift */,
+				C9549C462A41D23E004FAAEB /* SnapUITests.swift */,
+			);
+			path = SnapUITests;
+			sourceTree = "<group>";
+		};
+		C9DC0BB02A24BECE0032CAC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC0BB12A24BECE0032CAC8 /* Networking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9FD66502A2148D4003BE475 = {
+			isa = PBXGroup;
+			children = (
+				C9FD665B2A2148D4003BE475 /* CatAppSydorova */,
+				C9549C452A41D23E004FAAEB /* SnapUITests */,
+				C9FD665A2A2148D4003BE475 /* Products */,
+				C9DC0BB02A24BECE0032CAC8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9FD665A2A2148D4003BE475 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9FD66592A2148D4003BE475 /* CatAppSydorova.app */,
+				C9549C442A41D23D004FAAEB /* SnapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9FD665B2A2148D4003BE475 /* CatAppSydorova */ = {
+			isa = PBXGroup;
+			children = (
+				C9B6DD782A374A640042D07E /* Info.plist */,
+				C9DC0BC02A24D7A60032CAC8 /* CatCellDetails.swift */,
+				C9FD665E2A2148D4003BE475 /* ContentView.swift */,
+				C9FD665C2A2148D4003BE475 /* CatAppSydorovaApp.swift */,
+				C917CDAB2A2CDE9D00CFD566 /* GoogleService-Info.plist */,
+				C9FD66602A2148D5003BE475 /* Assets.xcassets */,
+				C9FD66622A2148D5003BE475 /* Preview Content */,
+			);
+			path = CatAppSydorova;
+			sourceTree = "<group>";
+		};
+		C9FD66622A2148D5003BE475 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C9FD66632A2148D5003BE475 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9549C432A41D23D004FAAEB /* SnapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9549C4E2A41D23E004FAAEB /* Build configuration list for PBXNativeTarget "SnapUITests" */;
+			buildPhases = (
+				C9549C402A41D23D004FAAEB /* Sources */,
+				C9549C412A41D23D004FAAEB /* Frameworks */,
+				C9549C422A41D23D004FAAEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9549C4B2A41D23E004FAAEB /* PBXTargetDependency */,
+			);
+			name = SnapUITests;
+			productName = SnapUITests;
+			productReference = C9549C442A41D23D004FAAEB /* SnapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C9FD66582A2148D4003BE475 /* CatAppSydorova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FD66672A2148D5003BE475 /* Build configuration list for PBXNativeTarget "CatAppSydorova" */;
+			buildPhases = (
+				C9FD66552A2148D4003BE475 /* Sources */,
+				C9FD66562A2148D4003BE475 /* Frameworks */,
+				C9FD66572A2148D4003BE475 /* Resources */,
+				C9DC0BB42A24BECE0032CAC8 /* Embed Frameworks */,
+				C92C15F82A2D106F00F1C5CF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatAppSydorova;
+			packageProductDependencies = (
+				C917CDAE2A2CE1D100CFD566 /* FirebaseAnalytics */,
+				C917CDB02A2CE1D100CFD566 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				C917CDB22A2CE1D100CFD566 /* FirebaseCrashlytics */,
+				C917CDB42A2CE1D100CFD566 /* FirebasePerformance */,
+			);
+			productName = CatAppSydorova;
+			productReference = C9FD66592A2148D4003BE475 /* CatAppSydorova.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9FD66512A2148D4003BE475 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C9549C432A41D23D004FAAEB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C9FD66582A2148D4003BE475;
+					};
+					C9FD66582A2148D4003BE475 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C9FD66542A2148D4003BE475 /* Build configuration list for PBXProject "CatAppSydorova" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9FD66502A2148D4003BE475;
+			packageReferences = (
+				C917CDAD2A2CE1D100CFD566 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = C9FD665A2A2148D4003BE475 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9FD66582A2148D4003BE475 /* CatAppSydorova */,
+				C9549C432A41D23D004FAAEB /* SnapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9549C422A41D23D004FAAEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FD66572A2148D4003BE475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FD66642A2148D5003BE475 /* Preview Assets.xcassets in Resources */,
+				C9FD66612A2148D5003BE475 /* Assets.xcassets in Resources */,
+				C917CDAC2A2CDE9D00CFD566 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C92C15F82A2D106F00F1C5CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9549C402A41D23D004FAAEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9549C472A41D23E004FAAEB /* SnapUITests.swift in Sources */,
+				C9549C592A41F608004FAAEB /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FD66552A2148D4003BE475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FD665F2A2148D4003BE475 /* ContentView.swift in Sources */,
+				C9DC0BC12A24D7A60032CAC8 /* CatCellDetails.swift in Sources */,
+				C9FD665D2A2148D4003BE475 /* CatAppSydorovaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9549C4B2A41D23E004FAAEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9FD66582A2148D4003BE475 /* CatAppSydorova */;
+			targetProxy = C9549C4A2A41D23E004FAAEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C9549C4C2A41D23E004FAAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.sydorova.SnapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatAppSydorova;
+			};
+			name = Debug;
+		};
+		C9549C4D2A41D23E004FAAEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.sydorova.SnapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatAppSydorova;
+			};
+			name = Release;
+		};
+		C9FD66652A2148D5003BE475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9FD66662A2148D5003BE475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9FD66682A2148D5003BE475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"CatAppSydorova/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VNU8KKW4GG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatAppSydorova/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.sydorova.CatAppSydorova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Yelizavieta Sydorova";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C9FD66692A2148D5003BE475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"CatAppSydorova/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VNU8KKW4GG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatAppSydorova/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.sydorova.CatAppSydorova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Yelizavieta Sydorova";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9549C4E2A41D23E004FAAEB /* Build configuration list for PBXNativeTarget "SnapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9549C4C2A41D23E004FAAEB /* Debug */,
+				C9549C4D2A41D23E004FAAEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FD66542A2148D4003BE475 /* Build configuration list for PBXProject "CatAppSydorova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FD66652A2148D5003BE475 /* Debug */,
+				C9FD66662A2148D5003BE475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FD66672A2148D5003BE475 /* Build configuration list for PBXNativeTarget "CatAppSydorova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FD66682A2148D5003BE475 /* Debug */,
+				C9FD66692A2148D5003BE475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C917CDAD2A2CE1D100CFD566 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C917CDAE2A2CE1D100CFD566 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C917CDAD2A2CE1D100CFD566 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C917CDB02A2CE1D100CFD566 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C917CDAD2A2CE1D100CFD566 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		C917CDB22A2CE1D100CFD566 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C917CDAD2A2CE1D100CFD566 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		C917CDB42A2CE1D100CFD566 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C917CDAD2A2CE1D100CFD566 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C9FD66512A2148D4003BE475 /* Project object */;
+}

@@ -1,0 +1,54 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :build_and_export do
+    # Для команди gym обовʼязково використайте параметри для уточнення схеми, воркспейсу, призначення (destination), методу експорту (export_method) та назву архіву
+	increment_version_number(
+ 		 version_number: "1.1",
+ 		 xcodeproj: "./CatAppSydorova/CatAppSydorova.xcodeproj"
+	)
+	gym(
+		clean: true,
+		scheme: "CatAppSydorova",
+    		workspace: "Networking.xcworkspace", 
+    		destination: "generic/platform=iOS", 
+    		export_method: "development", 
+		output_directory: "./output", 
+    		output_name: "MiawGav.ipa",
+		export_options: {
+      			provisioningProfiles: { 
+        			"ua.edu.ukma.sydorova.CatAppSydorova" => "Yelizavieta Sydorova"
+      			}
+    		}
+  	)
+	firebase_app_distribution(
+   		app: “1:851393115083:ios:5201297d0284b9eab37c4e”,
+		googleservice_info_plist_path: “./CatAppSydorova/GoogleService-Info.plist”,
+  	 	testers: "o.frankiv@ukma.edu.ua, mur.mur.may.li@gmail.com",
+		firebase_cli_token:"1//0cUEAt0J5JNByCgYIARAAGAwSNwF-L9IrmG7sw_MM3aRf98P_6Ep4z2oLMi6IiAX50evTkWfQrrbo-dQDaONpaDJW5LzY0hAFwmQ",
+   		release_notes: “This is my release, I am dead now”,
+   		ipa_path: “./output/MiawGav.ipa”
+ 	)
+  end
+  lane :take_screenshots do
+		snapshot
+
+  end
+
+end
